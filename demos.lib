@@ -1310,10 +1310,10 @@ with {
 // _,_ : kb_rom_rev1_demo : _,_
 // ```
 //------------------------------------------------------------
-declare phaser2_demo author "Luca Spanedda";
-declare phaser2_demo licence "GPL-3.0";
+declare kb_rom_rev1_demo author "Luca Spanedda";
+declare kb_rom_rev1_demo licence "GPL-3.0";
 
-kb_rom_rev1 = aploop
+kb_rom_rev1_demo = aploop
 with {
     // GUI
     rt =   hgroup("kb_rom_rev1", si.smoo(hslider("[0]RT [style:knob]", 0.8, 0.0, 1.0, 0.001)));
@@ -1361,6 +1361,7 @@ with {
 	    _ * 1.2 @ adaptSR(32768, 3330)) :> +);
     };
 };
+
 
 //====================================Generators==========================================
 //========================================================================================
